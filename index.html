@@ -1,4 +1,128 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .datetime {
+            text-align: center;
+            color: gray;
+        }
+
+        .date, .time {
+            font-size: 48px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 7cm);
+        }
+
+        .product {
+            width: calc(100% / 4);
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+        }
+
+        .product .content {
+            height: 200px;
+            overflow: hidden;
+        }
+
+.product img {
+    width: 100%;
+    height: 200px; /* Ajuste la hauteur selon tes besoins */
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le conteneur */
+}
+
+
+        .product .description {
+            margin-top: 10px;
+        }
+
+        .product .more-link {
+            margin-top: 5px;
+            cursor: pointer;
+            color: blue;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: gray;
+            margin: 0 4px;
+            border-radius: 4px;
+        }
+
+        .pagination a:hover {
+            background-color: #575757;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .product {
+                width: calc(100% / 3);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .product {
+                width: 100%;
+            }
+        }
+
+        /* Style pour le bouton flottant */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="datetime">
+        <div class="date" id="comment"></div>
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <div class="container">
+      
+
 
 <div class="product"><a href="https://www.amazon.com/dp/B007JXVR76?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41GuIM+GmLL._SL500_.jpg" alt="Product Image"></a><p>Meow Mix Original Choice Dry Cat Food, 6.3 Pound, Complete & Balanced Nutrition</p><p>$8.99 ($1.43 / lb)</p><a href="https://www.amazon.com/dp/B007JXVR76?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00283MYSI?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51DrcfG5wWL._SL500_.jpg" alt="Product Image"></a><p>Purina Friskies Gravy Wet Cat Food Variety Pack, Poultry Shreds, Meaty Bits & Prime Filets - (Pack of 32) 5.5 oz. Cans</p><p>$22.49 ($0.13 / Ounce)</p><a href="https://www.amazon.com/dp/B00283MYSI?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B001STX13U?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51WX-WQ5N-L._SL500_.jpg" alt="Product Image"></a><p>Purina Fancy Feast Grilled Wet Cat Food Seafood Collection in Wet Cat Food Variety Pack - (Pack of 24) 3 oz. Cans</p><p>$17.99 ($0.25 / Ounce)</p><a href="https://www.amazon.com/dp/B001STX13U?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B07CWV479K?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/513rg02uFbL._SL500_.jpg" alt="Product Image"></a><p>Purina Friskies Dry Cat Food, Gravy Swirlers - 22 lb. Bag</p><p>$21.28 ($0.97 / Pound)</p><a href="https://www.amazon.com/dp/B07CWV479K?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B005OB3E30?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51ShH7ekbBL._SL500_.jpg" alt="Product Image"></a><p>Purina Fancy Feast Gravy Lovers Poultry and Beef Gourmet Wet Cat Food Variety Pack - (Pack of 24) 3 oz. Cans</p><p>$19.92 ($0.28 / Ounce)</p><a href="https://www.amazon.com/dp/B005OB3E30?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0777NRJ2N?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51+Ftf+9r3L._SL500_.jpg" alt="Product Image"></a><p>Purina Friskies Wet Cat Food Pate Variety Pack Seafood and Chicken Pate Favorites - (Pack of 40) 5.5 oz. Cans</p><p>$30.48 ($0.14 / Ounce)</p><a href="https://www.amazon.com/dp/B0777NRJ2N?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B07CTBXRXD?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51J6vs5CGoL._SL500_.jpg" alt="Product Image"></a><p>Fancy Feast Poultry and Beef Feast Classic Pate Collection Grain Free Wet Cat Food Variety Pack - (Pack of 30) 3 oz. Cans</p><p>$24.94</p><a href="https://www.amazon.com/dp/B07CTBXRXD?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B06Y1145T9?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/513UFOKnEEL._SL500_.jpg" alt="Product Image"></a><p>9Lives Indoor Complete Dry Cat Food, 20 lb. Bag</p><p>$19.48 ($0.97 / lb)</p><a href="https://www.amazon.com/dp/B06Y1145T9?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00HN089EO?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51YbI8ygMUL._SL500_.jpg" alt="Product Image"></a><p>Purina Friskies Dry Cat Food, Seafood Sensations - 22 lb. Bag</p><p>$20.79 ($0.94 / lb)</p><a href="https://www.amazon.com/dp/B00HN089EO?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0777J8V5J?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51IfODejXRL._SL500_.jpg" alt="Product Image"></a><p>Purina Friskies Wet Cat Food Variety Pack, Surfin' & Turfin' Prime Filets Favorites - (Pack of 40) 5.5 oz. Cans</p><p>$31.20 ($0.14 / Ounce)</p><a href="https://www.amazon.com/dp/B0777J8V5J?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
 
@@ -75,4 +199,47 @@
 
 
 <div class="product"><a href="https://www.amazon.com/dp/B07YYKL3WM?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41oM10dYYhL._SL500_.jpg" alt="Product Image"></a><p>COCOYO Best Value 22"x22" Dog Training Pads 50 Count | Dog Pee Pads | Super Absorbent Puppy Pads,White</p><p>$11.65 ($0.23 / Count)</p><a href="https://www.amazon.com/dp/B07YYKL3WM?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CPPLLBHT?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41xCHY46nPL._SL500_.jpg" alt="Product Image"></a><p>100 Count 22” x 22” Super Absorbency Disposable Underpads, Leakproof Quick Drying Disposable Pads for Baby, Puppy and Adults, Puppy Pads, Cat Pee Pads for Dogs, Potty Puppy Training Pads</p><p>$23.99 ($0.24 / Count)</p><a href="https://www.amazon.com/dp/B0CPPLLBHT?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B01LWS9514?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41ZIy90z1IL._SL500_.jpg" alt="Product Image"></a><p>Glad for Pets Black Charcoal Puppy Pads 23" x 23" All-in-One | Puppy Potty Training Pads That ABSORB & NEUTRALIZE Urine Instantly | New & Improved Quality Puppy Pee Pads, 100 count</p><p>$29.98 ($0.30 / Count)</p><a href="https://www.amazon.com/dp/B01LWS9514?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0D1Y443LP?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41dycwWW+PL._SL500_.jpg" alt="Product Image"></a><p>Dog Pee Pads 22"x23" , 30 Count Disposable Puppy Pads Pee Pads for Dogs, Pet Training Pads Super Absorbent Leak-Proof Pee Pads (30 Count)</p><p>$7.49</p><a href="https://www.amazon.com/dp/B0D1Y443LP?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B0CKBY8QPX?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/41HEeX9HFdL._SL500_.jpg" alt="Product Image"></a><p>GREEN LIFESTYLE Pee Pads - Super Absorbent & Leak-Proof Pee Pads for Dogs - Puppy Pads - Waterproof Dog Pads, Lavender Scented Dog Training Pads for Cats, Rabbits (Pack of 100 - 22x22)</p><p>$21.99</p><a href="https://www.amazon.com/dp/B0CKBY8QPX?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B08ZSLBH44?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/413F1ztzXqS._SL500_.jpg" alt="Product Image"></a><p>IMMCUTE Puppy Pee Pads 22"x23"-100 Count | Dog Pee Training Pads Super Absorbent & Leak-Proof | Disposable Pet Piddle and Potty Pads for Puppies | Dogs | Doggie| Cats | Rabbits</p><p>$21.30</p><a href="https://www.amazon.com/dp/B08ZSLBH44?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00ODRO7W8?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51uubzMRZOL._SL500_.jpg" alt="Product Image"></a><p>Honey Care All-Absorb, Small 17.5" x 23.5", 120 Count, Dog and Puppy Training Pads, Ultra Absorbent and Odor Eliminating, Leak-proof 5-Layer Potty Training Pads with Quick-dry Surface, Blue, A05</p><p>$26.88 ($0.22 / Count)</p><a href="https://www.amazon.com/dp/B00ODRO7W8?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div><div class="product"><a href="https://www.amazon.com/dp/B00EI673B6?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/51b1RwXiPJL._SL500_.jpg" alt="Product Image"></a><p>HONEY CARE All-Absorb, Large 22" x 23", 100 Count, Dog and Puppy Training Pads, Ultra Absorbent and Odor Eliminating, Leak-Proof 5-Layer Potty Training Pads with Quick-Dry Surface, Blue, A01</p><p>$23.09 ($0.23 / Count)</p><a href="https://www.amazon.com/dp/B00EI673B6?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
-<div class="product"><a href="https://www.amazon.com/dp/B0BKQSVGF5?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/31O7lC30TQL._SL500_.jpg" alt="Product Image"></a><p>Arm & Hammer for Pets Heavy Duty Multipurpose Bath Wipes for Dogs, Travel Size, Mango Scent | All Purpose Dog Wipes Remove Odor & Refresh Skin for Pets | 30 Ct Pack of Travel Pet Wipes</p><p>$2.99</p><a href="https://www.amazon.com/dp/B0BKQSVGF5?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>2
+<div class="product"><a href="https://www.amazon.com/dp/B0BKQSVGF5?tag=eloabder-20&linkCode=osi&th=1&psc=1"><img src="https://m.media-amazon.com/images/I/31O7lC30TQL._SL500_.jpg" alt="Product Image"></a><p>Arm & Hammer for Pets Heavy Duty Multipurpose Bath Wipes for Dogs, Travel Size, Mango Scent | All Purpose Dog Wipes Remove Odor & Refresh Skin for Pets | 30 Ct Pack of Travel Pet Wipes</p><p>$2.99</p><a href="https://www.amazon.com/dp/B0BKQSVGF5?tag=eloabder-20&linkCode=osi&th=1&psc=1">View Product</a></div>
+
+    </div>
+
+    <!-- Bouton flottant -->
+    <button class="floating-button" onclick="window.location.href='https://www.iasmarket.us'">HOME</button>
+<div class="pagination">
+        <a href=" ">0</a>
+        <!-- Ajoutez plus de liens si nécessaire -->
+    </div>
+    <script>
+        function updateTime() {
+            const optionsDate = {
+                timeZone: 'America/Los_Angeles',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                weekday: 'long'
+            };
+            const optionsTime = {
+                timeZone: 'America/Los_Angeles',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+
+            const now = new Date();
+            const formatterDate = new Intl.DateTimeFormat('en-US', optionsDate);
+            const formatterTime = new Intl.DateTimeFormat('en-US', optionsTime);
+
+            const formattedDate = formatterDate.format(now);
+            const formattedTime = formatterTime.format(now);
+
+            document.getElementById('comment').textContent = "As an AMAZON Associate, I earn from qualifying purchases.";
+            document.getElementById('date').textContent = formattedDate;
+            document.getElementById('time').textContent = formattedTime;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>
